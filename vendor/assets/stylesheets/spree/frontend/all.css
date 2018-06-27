@@ -8,3 +8,34 @@
  *= require_self
  *= require_tree .
 */
+/* .hero-content {
+     position: relative;
+     min-height: 600px;
+     background-image: url(app/assets/images/background.jpg);
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-size: cover;
+ } */
+body {
+  background: #fdfdf9;
+}
+ #home-image {
+   position: relative;
+   text-align: center;
+   color: white;
+   padding-bottom: 15px;
+ }
+
+ .navbar-logo {
+   max-height: 60px;
+   max-width: 250px;
+ }
+#main-header {
+  /* background-color: #1c5c92; */
+  margin-bottom: 20px;
+  padding-top: 0.25em;
+}
+ #top-header {
+   background: #fdfdf9;
+   padding: 8px 0;
+ }

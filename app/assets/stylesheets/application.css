@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+ .hero-content {
+      position: relative; /* positioning will be explained in a resource */
+      min-height: 600px;  /* hero content element must be _at least_ 600 pixels */
+      background-image: url(../assets/images/background.jpg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+  }

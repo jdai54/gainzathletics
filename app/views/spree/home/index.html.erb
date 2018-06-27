@@ -1,4 +1,12 @@
 <% @body_id = 'home-page' %>
+<!-- <section class="hero-content">
+    <div>
+      <h1 class="hero-title">Gainz Atheltics</h1>
+    </div>
+</section> -->
+<div id="home-image">
+  <%= image_tag("background.jpg", alt: "Steamed Dumplings", class: "img-responsive") %>
+</div>
 <% content_for :sidebar do %>
   <div data-hook="homepage_sidebar_navigation">
     <%= render partial: 'spree/shared/taxonomies' %>
@@ -10,4 +18,3 @@
     <%= render partial: 'spree/shared/products', locals: { products: @products } %>
   <% end %>
 </div>
-
