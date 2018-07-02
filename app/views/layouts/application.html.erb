@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Gainz Athletics</title>
-    <%= csrf_meta_tags %>
+<head>
+  <title>Gainz Athletics</title>
+  <%= favicon_link_tag asset_path('gainz_logo_teal.png'), :rel => 'icon', :type =>  'image/png' %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= stylesheet_link_tag    'application', "https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Tangerine:700|Amatic+SC:700|Yatra+One|Comfortaa|Supermercado+One", media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <nav>
+    <div class="nav-left">
+    <ul class="nav">
+      <li><%= image_tag("gainz_logo_teal.png", alt: "Gainz Logo", class: "img-responsive navbar-logo") %></li>
+      <li><%= link_to Spree.t(:shop), spree.root_path %></li>
+    </ul>
+  </div>
+  <div class="nav-right">
+    <ul class="nav">
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-
-  <body>
-    <%= yield %>
-  </body>
+    </ul>
+  </div>
+  </nav>
+  <%= yield %>
+</body>
 </html>

@@ -1,0 +1,175 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.jumbotron {
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+}
+
+
+body {
+  // background-image: image-url('dragon.jpeg');
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  color: #fff;
+  background-color: #272626;
+}
+
+.nav {
+  // padding-top: 10px;
+  padding-right: 40px;
+  background-color: white;
+  border: none;
+  color: #fff;
+  width: 100%;
+  font-family: 'Comfortaa', cursive;
+}
+
+.nav li a {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.nav a {
+  color: grey;
+  font-size: 18px;
+  -webkit-transition: color 0.8s;
+  line-height: 72px;
+}
+
+.nav a:hover {
+  color: #337ab7;
+}
+
+.nav-left {
+    float: left;
+}
+
+.nav-left ul li {
+    float: left;
+}
+
+.nav-right ul li {
+    float: right;
+    color: white;
+    font-size: 18px;
+}
+
+.contact-info {
+  background-color: black;
+  text-align: center;
+}
+
+p {
+  font-size: 1.3em;
+  margin: 15px auto;
+  font-family: 'Comfortaa', cursive;
+  line-height: 1.5;
+  font-weight: 800;
+}
+
+.navbar-logo {
+  padding: 10px 5px 0px 20px;
+  max-height: 72px;
+  max-width: 250px;
+}
+
+.logo {
+  margin: auto;
+  max-width: 75%;
+  height: auto;
+}
+
+#home-image {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.home-image {
+  opacity: 0.6;
+  max-width: 70%;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4.0em;
+  color: white;
+  font-family: 'Yatra One', cursive;
+}
+
+.welcome-heading {
+  padding-top: 2.0em;
+  font-weight: 800;
+  font-size: 175%;
+  font-family: 'Comfortaa', cursive;
+}
+
+/* from: http://stackoverflow.com/questions/796087/make-a-div-into-a-link */
+.address a span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+#about-image {
+  padding-bottom: 40px;
+}
+
+.about-desc {
+  text-align: left;
+  padding-top: 15px;
+}
+
+#our-story-body {
+  font-family: 'Comfortaa', cursive;
+  font-size: 1.2em;
+}
+
+.field {
+  font-family: 'Comfortaa', cursive;
+}
+
+.field input {
+  color: black;
+}
+
+.field textarea {
+  color: black;
+}
+
+.btn {
+  font-family: 'Comfortaa', cursive;
+  font-size: 1.2em;
+}
