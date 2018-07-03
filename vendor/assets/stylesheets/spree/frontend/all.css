@@ -39,3 +39,7 @@ body {
    background: #fdfdf9;
    padding: 8px 0;
  }
+
+ .container {
+   color: black;
+ }
