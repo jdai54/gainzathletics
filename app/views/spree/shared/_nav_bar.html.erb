@@ -3,5 +3,12 @@
     <li id="search-bar" data-hook>
       <%= render partial: 'spree/shared/search' %>
     </li>
+    <li id="link-to-cart" data-hook>
+      <noscript>
+        <%= link_to_cart %>
+      </noscript>
+      &nbsp;
+    </li>
+    <script>Spree.fetch_cart()</script>
   </ul>
 </nav>

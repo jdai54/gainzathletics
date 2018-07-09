@@ -4,7 +4,7 @@
       <div class="row">
         <figure class="col-md-4 col-sm-3" data-hook>
           <!-- <%= logo %> -->
-          <%= image_tag("gainz_logo_teal.png", alt: "Sun Logo", class: "img-responsive navbar-logo") %>
+          <%= link_to image_tag("gainz_logo_teal.png", alt: "Sun Logo", class: "img-responsive navbar-logo"), root_path %>
         </figure>
         <%= render partial: 'spree/shared/nav_bar' %>
       </div>
@@ -13,4 +13,8 @@
   <div class="container">
     <%= render partial: 'spree/shared/main_nav_bar' %>
   </div>
+  <!-- <div id="home-image">
+    <%= image_tag("background.jpg", alt: "Steamed Dumplings", class: "img-responsive") %>
+  </div> -->
+
 </div>

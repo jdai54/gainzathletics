@@ -13,7 +13,7 @@
   <nav>
     <div class="nav-left">
     <ul class="nav">
-      <li><%= image_tag("gainz_logo_teal.png", alt: "Gainz Logo", class: "img-responsive navbar-logo") %></li>
+      <li><%= link_to image_tag("gainz_logo_teal.png", alt: "Gainz Logo", class: "img-responsive navbar-logo") , root_path %></li>
       <li><%= link_to Spree.t(:shop), spree.root_path %></li>
     </ul>
   </div>
